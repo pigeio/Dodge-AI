@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+dist/
+build/
+venv/
+*.db
+.env
+
+# Node
+node_modules/
+
+# Data (large JSONL files)
+data/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test files
+backend/test_agent.py
+
+# Gemini
+.gemini/
