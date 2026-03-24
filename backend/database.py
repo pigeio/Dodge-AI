@@ -5,7 +5,7 @@ import pandas as pd
 import networkx as nx
 
 DB_PATH = "sap_data.db"
-DATA_DIR = r"C:\Users\rajan\Desktop\Dodge AI\data\sap-o2c-data"
+DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data", "sap-o2c-data")
 
 def init_db():
     conn = sqlite3.connect(DB_PATH)
