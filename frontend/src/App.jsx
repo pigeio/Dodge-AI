@@ -9,7 +9,7 @@ function App() {
 
   useEffect(() => {
     // Fetch graph data from backend
-    fetch("http://localhost:8000/api/graph")
+    fetch(`${import.meta.env.VITE_API_URL || 'http://localhost:8000'}/api/graph`)
       .then((res) => res.json())
       .then((data) => {
         setGraphData(data);
