@@ -15,6 +15,9 @@ def import_data_to_sqlite():
     if os.path.exists(DB_PATH):
         # Already imported
         return
+    if not os.path.exists(DATA_DIR):
+        print(f"Data directory not found at {DATA_DIR}. Skipping import.")
+        return
     print("Importing JSONL data into SQLite...")
     conn = init_db()
     
